@@ -40,5 +40,27 @@ public class Main {
         leftWeight = liftingCapacity - stuffWeight - productsWeight;
         System.out.println("Оставшееся место " + leftWeight + " кг!");
 
+        var overload = (stuffWeight + productsWeight) % liftingCapacity;
+        System.out.println("Перегруз на " + overload + " кг!");
+
+        var productsInOneCar = productsWeight / 2;
+        System.out.println("Продуктов в одной машине теперь " + productsInOneCar);
+
+        short bananas = 200;
+        System.out.println("Бананов " + bananas + " кг");
+
+        float sugar = 3;
+        float onePortion = sugar / 4;
+        System.out.println("Масса одной порции " + onePortion + " кг");
+
+        byte a = 1;
+        short b = 1;
+        int c = 1;
+        int d = a + b + c;
+        System.out.println(d);
+
+        float g = a + 1f;
+        System.out.println(g);
+
     }
 }
